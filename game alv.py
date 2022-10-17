@@ -44,12 +44,12 @@ board.place(x = 0, y = 50)
    
 
 #image that will represent the cat on the track. kitty.png is placeholder, will try to draw me own if I have time
-image1 = PhotoImage(file = 'kitty.png').subsample(5, 5)
+image1 = PhotoImage(file = 'images/kitty.png').subsample(5, 5)
 cat_img = image1
 rescuer = board.create_image(670, 850, anchor = 's', image = image1)
 
 class Mouse():
-        image2 = PhotoImage(file = 'mouse.png').subsample(30, 30)
+        image2 = PhotoImage(file = 'images/mouse.png').subsample(30, 30)
         mouse_img = image2
         board.create_image(100, 200, image = image2)
         board.create_image(500, 400, image = image2)
